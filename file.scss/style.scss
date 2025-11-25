@@ -1,0 +1,171 @@
+@import "normalize";
+@import "header";
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f6f8;
+  color: #1a1a1a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.header {
+  a {
+    font-weight: 700;
+  }
+
+  &__list {
+    list-style: none;
+    justify-content: center;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    color: #1a1a1a;
+    font-weight: 600;
+    padding: 6px 0;
+    display: inline-block;
+
+    &--active {
+      color: #3b4c6b;
+    }
+  }
+}
+
+.offer {
+  padding: 60px 0 40px;
+  text-align: center;
+
+  &__title {
+    font-size: 32px;
+    margin: 0 0 16px;
+  }
+
+  &__description {
+    max-width: 760px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3b4c6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.text-section {
+  padding: 40px 0;
+  text-align: center;
+
+  &__title {
+    font-size: 28px;
+    margin: 0 0 16px;
+  }
+
+  &__description {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.color-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 32px 16px;
+  background-color: #3b4c6b;
+  color: #ffffff;
+}
+
+.item-section {
+  align-items: center;
+}
+
+.item-section__group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.color-block__item {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.h3-text {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.video {
+  max-width: 100%;
+  margin: 24px auto 0;
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+  }
+}
+
+.footer {
+  text-align: center;
+  background-color: #ffffff;
+  color: #888;
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: 8px 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .header__list {
+    flex-direction: row;
+  }
+
+  .offer__title {
+    font-size: 40px;
+  }
+
+  .text-section__title {
+    font-size: 34px;
+  }
+}

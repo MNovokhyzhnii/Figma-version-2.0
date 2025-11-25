@@ -9,8 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Simple site</title>
   </head>
@@ -41,9 +40,7 @@
 
     <main>
       <section class="offer container">
-        <h1>
-          <p class="offer__title">Design and Layout</p>
-        </h1>
+        <h1 class="offer__title">Design and Layout</h1>
 
         <p class="offer__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
@@ -52,14 +49,12 @@
           ducimus labore quae nam harum!
         </p>
 
-        <button class="button">WRITE TO ME</button>
-        <a href="#" class="button"> WRITE TO ME </a>
+        <button class="button" type="button">WRITE TO ME</button>
+        <a href="#" class="button">WRITE TO ME</a>
       </section>
 
       <section class="text-section container">
-        <h2>
-          <p class="text-section__title">About me</p>
-        </h2>
+        <h2 class="text-section__title">About me</h2>
         <p class="text-section__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ducimus
           cum soluta dolore atque sequi iusto eum deserunt! Corporis eos ea
@@ -76,10 +71,11 @@
             class="color-block__item"
             src="40 project 2.png"
             alt="icon of 40 projects"
+            loading="lazy"
           />
           <div>
             <h3>40+</h3>
-            <h3 class="h3-text">projects</h3>
+            <p class="h3-text">projects</p>
           </div>
         </div>
         <div class="item-section__group">
@@ -87,10 +83,11 @@
             class="color-block__item"
             src="40 project 2.png"
             alt="icon of 40 projects"
+            loading="lazy"
           />
           <div>
             <h3>40+</h3>
-            <h3 class="h3-text">projects</h3>
+            <p class="h3-text">projects</p>
           </div>
         </div>
         <div class="item-section__group">
@@ -98,10 +95,11 @@
             class="color-block__item"
             src="40 project 2.png"
             alt="icon of 40 projects"
+            loading="lazy"
           />
           <div>
             <h3>40+</h3>
-            <h3 class="h3-text">projects</h3>
+            <p class="h3-text">projects</p>
           </div>
         </div>
         <div class="item-section__group">
@@ -109,10 +107,11 @@
             class="color-block__item"
             src="40 project 2.png"
             alt="icon of 40 projects"
+            loading="lazy"
           />
           <div>
             <h3>40+</h3>
-            <h3 class="h3-text">projects</h3>
+            <p class="h3-text">projects</p>
           </div>
         </div>
         <div class="item-section__group">
@@ -120,10 +119,11 @@
             class="color-block__item"
             src="40 project 2.png"
             alt="icon of 40 projects"
+            loading="lazy"
           />
           <div>
             <h3>40+</h3>
-            <h3 class="h3-text">projects</h3>
+            <p class="h3-text">projects</p>
           </div>
         </div>
         <div class="item-section__group">
@@ -131,18 +131,17 @@
             class="color-block__item"
             src="40 project 2.png"
             alt="icon of 40 projects"
+            loading="lazy"
           />
           <div>
             <h3>40+</h3>
-            <h3 class="h3-text">projects</h3>
+            <p class="h3-text">projects</p>
           </div>
         </div>
       </section>
 
       <section class="text-section container">
-        <h2>
-          <p clacc="text-section__title">How I Work</p>
-        </h2>
+        <h2 class="text-section__title">How I Work</h2>
         <p class="text-section__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ducimus
           cum soluta dolore atque sequi iusto eum deserunt! Corporis eos ea
@@ -152,7 +151,7 @@
           Dolorum tenetur velit illum natus. Fugiat odio iusto nobis adipisci
           natus!
         </p>
-        <p>
+        <div class="video">
           <iframe
             width="1110"
             height="600"
@@ -163,11 +162,11 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-        </p>
+        </div>
       </section>
       <footer class="color-block footer">
-        <h3>Ostap Ivanenko</h3>
-        <p>© 2018. All rights reserved.</p>
+        <h3>Mykola Novokhyzhnii</h3>
+        <p>&copy; 2018. All rights reserved.</p>
       </footer>
     </main>
   </body>
