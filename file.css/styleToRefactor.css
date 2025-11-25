@@ -1,4 +1,4 @@
-/* Підключення шрифту Inter */
+/* Base font setup */
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -96,8 +96,44 @@ footer {
   color: #888;
 }
 
-/* --- Респонсивність --- */
+/* Table layout */
+.table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  max-width: 520px;
+  margin: 40px auto;
+}
 
+.table-cell {
+  background: #eceff4;
+  border: 1px solid #d7dbe2;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: #1a1a1a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.table-cell.yellow {
+  background: #fde68a;
+  color: #4a3c00;
+}
+.table-cell.red {
+  background: #ef4444;
+  color: #ffffff;
+}
+.table-cell.blue {
+  background: #3b82f6;
+  color: #ffffff;
+}
+.table-cell.black {
+  background: #111111;
+  color: #ffffff;
+}
+
+/* Layout helpers for index page */
 .container {
   padding: 0 16px;
   width: 100%;
